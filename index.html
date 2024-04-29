@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/Users/a1111/Desktop/html2/Laba2.CSS/laba2.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Форма обратной связи</title>
+</head>
+<body>
+    <h1 class="center">Форма обратной связи</h1>
+    <form method="post" action="https://httpbin.org/post">
+        <div>
+            <label for="fio">ФИО</label>
+            <input type="text" name="fio" id="fio" placeholder="Введите ФИО"  required><br>
+        </div>
+        <div>
+            <label for="email">E-mail</label>
+            <input type="email" name="email" id="email" placeholder="Введите email" required><br>
+        </div>
+
+        <fieldset class="radio">
+            <legend>Откуда узнали о нас?</legend>
+            <div>
+                <input type="radio" name="radio" id="friends" value="friends">
+                <label for="friends">Друзья</label>
+            </div>
+            <div>
+                <input type="radio" name="radio" id="tv" value="tv">
+                <label for="radio">Телевидение</label>
+            </div>
+            <div>
+                <input type="radio" name="radio" id="internet" value="internet">
+                <label for="radio">Интернет</label>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Тип обращения</legend>
+            <select name="category" id="category">
+                <option value="negativ">Жалоба</option>
+                <option value="proposal">Предложение</option>
+            </select>
+        </fieldset>
+
+        <fieldset>
+            <legend>Текст сообщения</legend>
+            <textarea name="text message" id="text message" rows="20" cols="80" placeholder="Введите текст сообщения"></textarea>
+        </fieldset>
+
+        <fieldset>
+            <legend>Добавить файл</legend>
+            <input type="file" name="file" id="file">
+        </fieldset>
+
+        <fieldset>
+            <legend>Согласие на обработку персональных данных</legend>
+            <input type="checkbox">
+            <label for="Yes">Даю согласие на обработку персональных данных.</label>
+        </fieldset>
+
+        <button type="submit">Отправить</button>
+    </form>
+</body>
+</html>

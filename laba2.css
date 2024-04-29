@@ -1,0 +1,17 @@
+body {
+    font-size: 20px;
+    line-height: 28px;
+    border: 20px solid rgb(0, 255, 251);
+    margin: 0 18%;
+}
+form {
+    background-color: rgba(192, 255, 192, 0.596);
+    text-align: center;
+    margin: 0 2%;
+    margin-bottom: 2%;
+}
+
+.center{
+    text-align: center;
+    margin: auto;
+}
